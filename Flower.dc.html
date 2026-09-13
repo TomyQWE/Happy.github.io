@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<svg viewBox="0 0 60 180" width="100%" height="100%" preserveAspectRatio="xMidYMax meet" fill="none" stroke="#201e1d" stroke-width="3" stroke-linejoin="round">
+  <path d="M30 180V62" stroke-linecap="round"></path>
+  <path d="M30 132c-11 0-17-7-19-15 11-1 17 4 19 15z" fill="#7a8f4a"></path>
+  <path d="M30 108c9 0 14-6 16-13-9-1-14 3-16 13z" fill="#7a8f4a"></path>
+
+  <sc-if value="{{ isChrys }}" hint-placeholder-val="{{ true }}">
+    <g stroke-width="1.6">
+      <g transform="rotate(0 30 40)"><ellipse cx="30" cy="20" rx="4.6" ry="12" fill="{{ color }}"></ellipse></g>
+      <g transform="rotate(30 30 40)"><ellipse cx="30" cy="20" rx="4.6" ry="12" fill="{{ color }}"></ellipse></g>
+      <g transform="rotate(60 30 40)"><ellipse cx="30" cy="20" rx="4.6" ry="12" fill="{{ color }}"></ellipse></g>
+      <g transform="rotate(90 30 40)"><ellipse cx="30" cy="20" rx="4.6" ry="12" fill="{{ color }}"></ellipse></g>
+      <g transform="rotate(120 30 40)"><ellipse cx="30" cy="20" rx="4.6" ry="12" fill="{{ color }}"></ellipse></g>
+      <g transform="rotate(150 30 40)"><ellipse cx="30" cy="20" rx="4.6" ry="12" fill="{{ color }}"></ellipse></g>
+      <g transform="rotate(180 30 40)"><ellipse cx="30" cy="20" rx="4.6" ry="12" fill="{{ color }}"></ellipse></g>
+      <g transform="rotate(210 30 40)"><ellipse cx="30" cy="20" rx="4.6" ry="12" fill="{{ color }}"></ellipse></g>
+      <g transform="rotate(240 30 40)"><ellipse cx="30" cy="20" rx="4.6" ry="12" fill="{{ color }}"></ellipse></g>
+      <g transform="rotate(270 30 40)"><ellipse cx="30" cy="20" rx="4.6" ry="12" fill="{{ color }}"></ellipse></g>
+      <g transform="rotate(300 30 40)"><ellipse cx="30" cy="20" rx="4.6" ry="12" fill="{{ color }}"></ellipse></g>
+      <g transform="rotate(330 30 40)"><ellipse cx="30" cy="20" rx="4.6" ry="12" fill="{{ color }}"></ellipse></g>
+      <g transform="rotate(15 30 40)"><ellipse cx="30" cy="27" rx="3.8" ry="8.5" fill="{{ color }}"></ellipse></g>
+      <g transform="rotate(75 30 40)"><ellipse cx="30" cy="27" rx="3.8" ry="8.5" fill="{{ color }}"></ellipse></g>
+      <g transform="rotate(135 30 40)"><ellipse cx="30" cy="27" rx="3.8" ry="8.5" fill="{{ color }}"></ellipse></g>
+      <g transform="rotate(195 30 40)"><ellipse cx="30" cy="27" rx="3.8" ry="8.5" fill="{{ color }}"></ellipse></g>
+      <g transform="rotate(255 30 40)"><ellipse cx="30" cy="27" rx="3.8" ry="8.5" fill="{{ color }}"></ellipse></g>
+      <g transform="rotate(315 30 40)"><ellipse cx="30" cy="27" rx="3.8" ry="8.5" fill="{{ color }}"></ellipse></g>
+    </g>
+    <circle cx="30" cy="40" r="6" fill="#ffd400" stroke-width="2"></circle>
+  </sc-if>
+
+  <sc-if value="{{ isDaisy }}" hint-placeholder-val="{{ false }}">
+    <g stroke-width="2">
+      <g transform="rotate(0 30 40)"><ellipse cx="30" cy="24" rx="6" ry="13" fill="{{ color }}"></ellipse></g>
+      <g transform="rotate(45 30 40)"><ellipse cx="30" cy="24" rx="6" ry="13" fill="{{ color }}"></ellipse></g>
+      <g transform="rotate(90 30 40)"><ellipse cx="30" cy="24" rx="6" ry="13" fill="{{ color }}"></ellipse></g>
+      <g transform="rotate(135 30 40)"><ellipse cx="30" cy="24" rx="6" ry="13" fill="{{ color }}"></ellipse></g>
+      <g transform="rotate(180 30 40)"><ellipse cx="30" cy="24" rx="6" ry="13" fill="{{ color }}"></ellipse></g>
+      <g transform="rotate(225 30 40)"><ellipse cx="30" cy="24" rx="6" ry="13" fill="{{ color }}"></ellipse></g>
+      <g transform="rotate(270 30 40)"><ellipse cx="30" cy="24" rx="6" ry="13" fill="{{ color }}"></ellipse></g>
+      <g transform="rotate(315 30 40)"><ellipse cx="30" cy="24" rx="6" ry="13" fill="{{ color }}"></ellipse></g>
+    </g>
+    <circle cx="30" cy="40" r="9" fill="#ffd400"></circle>
+  </sc-if>
+
+  <sc-if value="{{ isTulip }}" hint-placeholder-val="{{ false }}">
+    <path d="M13 34c0-14 8-24 17-24s17 10 17 24c0 16-8 26-17 26s-17-10-17-26z" fill="{{ color }}"></path>
+    <path d="M22 12c0 16 2 26 8 30M38 12c0 16-2 26-8 30" stroke-width="2"></path>
+  </sc-if>
+
+  <sc-if value="{{ isRose }}" hint-placeholder-val="{{ false }}">
+    <circle cx="30" cy="38" r="18" fill="{{ color }}"></circle>
+    <path d="M30 27a11 11 0 1 1-9 17 15 15 0 0 0 24-4" stroke-width="2.4"></path>
+    <path d="M14 46c4 8 12 12 20 10" stroke-width="2"></path>
+  </sc-if>
+</svg>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:80,&quot;height&quot;:220},&quot;type&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;chrys&quot;,&quot;daisy&quot;,&quot;tulip&quot;,&quot;rose&quot;],&quot;default&quot;:&quot;chrys&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;color&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#ec3013&quot;,&quot;options&quot;:[&quot;#ec3013&quot;,&quot;#ffd400&quot;,&quot;#f3f2f2&quot;,&quot;#2b4c7e&quot;],&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const t = this.props.type ?? 'chrys';
+    return {
+      color: this.props.color ?? '#ec3013',
+      isChrys: t === 'chrys', isDaisy: t === 'daisy', isTulip: t === 'tulip', isRose: t === 'rose'
+    };
+  }
+}
+</script>
+</body>
+</html>
