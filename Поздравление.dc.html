@@ -47,10 +47,10 @@
           <span style="display: block; color: #ec3013; animation: riseIn 0.7s cubic-bezier(.2,.7,.2,1) 0.15s both">{{ name }}!</span>
         </h1>
         <div style="height: 2px; background: #201e1d; margin: 28px 0 22px; transform-origin: left; animation: sweep 0.8s cubic-bezier(.2,.7,.2,1) 0.4s both"></div>
-        <p style="font-size: 20px; line-height: 1.5; max-width: 54ch; margin: 0; animation: fadeIn 0.8s ease 0.6s both">Три задания: наловить бананов, найти миньона среди горшков и собрать букет. В конце — поздравление и видео.</p>
+        <p style="font-size: 20px; line-height: 1.5; max-width: 54ch; margin: 0; animation: fadeIn 0.8s ease 0.6s both">Три задания: наловить бананов, найти миньона среди горшков и собрать букет. В конце — поздравление.</p>
         <div style="display: flex; gap: 12px; align-items: center; margin-top: 32px; animation: fadeIn 0.8s ease 0.8s both">
           <button onClick="{{ startGame1 }}" class="btn btn-primary" style="font-size: 16px; padding: 16px 24px">Начать испытание →</button>
-          <button onClick="{{ skipAll }}" class="btn btn-ghost" style="font-size: 14px; padding: 16px 18px">Пропустить и открыть поздравление</button>
+         
         </div>
       </div>
       <div style="display: flex; justify-content: center; min-width: 0; overflow: hidden; padding: 0 40px; animation: bob 4.5s ease-in-out infinite">
@@ -274,7 +274,15 @@
           </h1>
           <div style="height: 2px; background: #201e1d; margin: 28px 0 22px"></div>
           <div style="font-size: 21px; line-height: 1.55; max-width: 52ch">
-            <p style="margin-top: 0">Настя,поздравляю тебя с днем рождения.Желаю здоровья и счастья. Всего самого наилучшего и хорошего с Артемом).</p>
+              <p style="margin-top: 0">
+                  Настя,поздравляю тебя с днём рождения!!!
+                  Пожелать тебе хочется много: Чтобы счастье свое ты нашла,
+                  Чтобы длинной была та дорога,
+                  По которой ты в жизни пошла.
+                  Чтобы люди тебя уважали,
+                  И светлее все было вокруг.
+                  И чтоб рядом с тобой оставался Хоть один, но надежный твой друг(подруга).
+              </p>
           </div>
         </div>
 
@@ -332,7 +340,7 @@
   </footer>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;name&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Анастасия&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;dateLabel&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;11 августа 2026&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;videoSrc&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;video/pozdravlenie.mp4&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;name&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Настя&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;dateLabel&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;27 июля 2026&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;videoSrc&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;video/pozdravlenie.mp4&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
 const KINDS = [
   { key: 'banana', label: 'банан', color: '#201e1d', pts: 10 },
   { key: 'coins', label: 'монеты', color: '#ec3013', pts: 25 },
